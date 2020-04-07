@@ -1,0 +1,3 @@
+displayName = Crystalline Mod
+author = Lemmy and the Dev Team
+version = 0.1
