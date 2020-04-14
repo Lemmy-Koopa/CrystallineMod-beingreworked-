@@ -23,7 +23,7 @@ namespace CrystallineMod.PrehardmodeArmor
 		public override void AddRecipes()
 		{
 			ModRecipe recipe = new ModRecipe(mod);
-			recipe.AddIngredient(ItemID.Star, 3);
+			recipe.AddIngredient(ItemID.FallenStar, 3);
 			recipe.SetResult(this);
 			recipe.AddRecipe();
 		}

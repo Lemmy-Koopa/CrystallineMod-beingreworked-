@@ -12,7 +12,7 @@ namespace CrystallineMod.Items.Weapons
 		{
 
 			item.shootSpeed = 10f;
-			item.damage = 10;
+			item.damage = 6;
 			item.knockBack = 5f;
 			item.useStyle = 1;
 			item.useAnimation = 25;
@@ -28,6 +28,15 @@ namespace CrystallineMod.Items.Weapons
 			item.UseSound = SoundID.Item1;
 			item.value = Item.sellPrice(copper: 20);
 			item.shoot = ProjectileType<SlimerangProjectile>();
+		}
+		public override void AddRecipes()
+		{
+			ModRecipe recipe = new ModRecipe(mod);
+			recipe.AddIngredient(ItemID.Gel, 30);
+			recipe.AddTile(TileID.WorkBenches);
+			recipe.SetResult(this);
+			recipe.AddRecipe();
+
 		}
 	}
 }

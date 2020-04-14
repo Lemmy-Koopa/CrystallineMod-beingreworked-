@@ -72,7 +72,8 @@ namespace CrystallineMod.PrehardmodeArmor
 		public override void AddRecipes()
 		{
 			ModRecipe recipe = new ModRecipe(mod);
-			recipe.AddIngredient(ItemID.Gel, 5);
+			recipe.AddIngredient(ItemID.Gel, 30);
+			recipe.AddTile(TileID.WorkBenches);
 			recipe.SetResult(this);
 			recipe.AddRecipe();
 		}

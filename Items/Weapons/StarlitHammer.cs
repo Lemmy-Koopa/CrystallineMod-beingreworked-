@@ -32,7 +32,7 @@ namespace CrystallineMod.Items.Weapons
 		public override void AddRecipes()
 		{
 			ModRecipe recipe = new ModRecipe(mod);
-			recipe.AddIngredient(ItemID.Star, 5);
+			recipe.AddIngredient(ItemID.FallenStar, 5);
 			recipe.AddTile(TileID.Anvils);
 			recipe.SetResult(this);
 			recipe.AddRecipe();

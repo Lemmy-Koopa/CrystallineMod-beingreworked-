@@ -34,7 +34,11 @@ namespace CrystallineMod.Items.Weapons
 			item.autoReuse = true;
 			item.shoot = ProjectileType<StarProjectile>();
 			item.shootSpeed = 16f;
-			item.holdStyle = 3;
+			
+		}
+		public override Vector2? HoldoutOffset()
+		{
+			return new Vector2?(new Vector2(0, 3));
 		}
 
 		public override bool Shoot(Player player, ref Vector2 position, ref float speedX, ref float speedY, ref int type, ref int damage, ref float knockBack)
@@ -69,7 +73,7 @@ namespace CrystallineMod.Items.Weapons
 		public override void AddRecipes()
 		{
 			ModRecipe recipe = new ModRecipe(mod);
-			recipe.AddIngredient(ItemID.Star, 5);
+			recipe.AddIngredient(ItemID.FallenStar, 5);
 			recipe.AddTile(TileID.Anvils);
 			recipe.SetResult(this);
 			recipe.AddRecipe();
