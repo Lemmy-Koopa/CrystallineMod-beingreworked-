@@ -3,9 +3,9 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Desiccation.ModItems.Flails
+namespace CrystallineMod.Items.Weapons
 {
-	public class SolarFlail : ModItem
+	public class WoodFlail : ModItem
 	{
 		public override void SetDefaults()
 		{
@@ -18,7 +18,7 @@ namespace Desiccation.ModItems.Flails
 			item.useAnimation = 40;
 			item.useTime = 40;
 			item.knockBack = 4F;
-			item.damage = 60;
+			item.damage = 8;
 			item.scale = 2F;
 			item.noUseGraphic = true;
 			item.shoot = ModContent.ProjectileType<WoodFlailProjectile>();
@@ -32,7 +32,7 @@ namespace Desiccation.ModItems.Flails
 		public override void AddRecipes()
 		{
 			ModRecipe recipe = new ModRecipe(mod);
-			recipe.AddIngredient(ItemID.Wood, 10);
+			recipe.AddIngredient(ItemID.Wood, 20);
 			recipe.AddTile(TileID.WorkBenches);
 			recipe.SetResult(this);
 			recipe.AddRecipe();
